@@ -1,0 +1,31 @@
+.modal-btn {
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow);
+
+  transition: border var(--transition-property);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--secondary-bcg-color);
+  }
+}

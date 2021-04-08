@@ -1,0 +1,10 @@
+.social-list {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+.social-list__item {
+  & + & {
+    margin-left: 10px;
+  }
+}

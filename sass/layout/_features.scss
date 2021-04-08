@@ -1,0 +1,50 @@
+.features {
+  &__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__icon-wrapper {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: var(--secondary-bcg-color);
+    border-radius: 4px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+  }
+}
+
+.features__item {
+  box-sizing: border-box;
+  font-size: calc((100% / 4- 30px));
+
+  .features__list & + & {
+    margin-left: var(--card-set-gap);
+  }
+}

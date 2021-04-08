@@ -1,0 +1,44 @@
+.modal {
+  width: 528px;
+  height: 581px;
+
+  padding: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--background-color);
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15x;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+  }
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  animation-name: skaleModal;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
