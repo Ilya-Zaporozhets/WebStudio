@@ -1,7 +1,13 @@
 .container {
-  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .visually-hidden {
@@ -107,7 +113,7 @@ img {
 }
 
 .header__wrapper {
-  display: flex;
+  display: none;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
