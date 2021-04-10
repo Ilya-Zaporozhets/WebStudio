@@ -112,13 +112,6 @@ img {
   border-bottom: 1px solid var(--border-color);
 }
 
-.header__wrapper {
-  display: none;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .main-navigation {
   display: flex;
 }
@@ -407,7 +400,7 @@ img {
 }
 
 .footer {
-  width: 480px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
