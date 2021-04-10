@@ -1,34 +1,53 @@
 .hero {
-  max-width: 1600;
-  margin: 0 auto;
-  padding: 200px 0;
   text-align: center;
-
-  background-color: #2f303a;
+  margin: 0 auto;
+  padding: 118px 0;
 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/hero/hero.jpg);
+    url(/images/mobile/hero/img.jpg);
+  background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 .main-title {
   box-sizing: border-box;
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
 
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 120px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/tablet/hero/img.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 120px o;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/desktop/hero/img.jpg);
+  }
 }

@@ -1,9 +1,15 @@
 .container {
-  max-width: 1200px;
+  width: 450px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 45px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
 }
 
 .visually-hidden {
@@ -72,8 +78,8 @@ img {
 }
 
 .section {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .body {
