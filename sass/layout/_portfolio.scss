@@ -1,6 +1,10 @@
 .portfolio {
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    margin-top: var(--card-set-gap);
+  }
 
   // &__item {
   //   flex-basis: calc(100% / 3- var(--card-set-gap));

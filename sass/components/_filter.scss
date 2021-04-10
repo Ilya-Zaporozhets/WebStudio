@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .filter__item {
@@ -11,10 +11,7 @@
 }
 
 .filter-btn {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
 
   font-weight: 500;
   font-size: 16px;
