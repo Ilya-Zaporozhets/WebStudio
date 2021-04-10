@@ -1,13 +1,13 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   margin-bottom: 35px;
 }
 
 .filter__item {
-  .filter & + & {
-    margin-left: 8px;
-  }
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .filter-btn {

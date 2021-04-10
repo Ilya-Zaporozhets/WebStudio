@@ -1,13 +1,13 @@
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-
-  // margin-left: auto;
-  // margin-right: auto;
+  margin: 0 auto;
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
-    margin: 0 auto;
   }
 }

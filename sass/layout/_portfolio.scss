@@ -1,23 +1,23 @@
 .portfolio {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 
-  &__item {
-    flex-basis: calc(100% / 3- var(--card-set-gap));
+  // &__item {
+  //   flex-basis: calc(100% / 3- var(--card-set-gap));
 
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
+  //   margin-top: var(--card-set-gap);
+  //   margin-left: var(--card-set-gap);
 
-    transition: box-shadow var(--transition-property);
-  }
+  //   transition: box-shadow var(--transition-property);
+  // }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
+  // &__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
 
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-left: calc(-1 * var(--card-set-gap));
-  }
+  //   margin-top: calc(-1 * var(--card-set-gap));
+  //   margin-left: calc(-1 * var(--card-set-gap));
+  // }
 
   &__title {
     font-weight: 700;
