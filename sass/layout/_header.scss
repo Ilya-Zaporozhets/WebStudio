@@ -133,11 +133,12 @@
   padding: 48px 40px;
   flex-direction: column;
   justify-content: space-between;
-}
-.mobile-menu {
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  transition: opacity var(--transition-property);
 }
 .mobile-menu.is-open {
   opacity: 1;
