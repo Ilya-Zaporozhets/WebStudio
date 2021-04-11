@@ -89,7 +89,6 @@
                 </ul>
 
 
-
             </div>   
               
 
@@ -701,24 +700,27 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- Form -->
-            
-            <div class="mailing">
+           
+        </div>  
+        <!-- Form -->
+        
+        <div class="mailing container">
+        
+            <form class="mailing__form" autocomplete="off">
                 <b class="mailing__action">Подпишитесь на рассылку</b>
-
-                <form class="mailing__form" autocomplete="off">
-                    <input  type="email" name="user-email" placeholder="E-mail" class="mailing__input" required>
-            
-                    <button  type="submit" class="mailing__button">Подписаться &nbsp
+                <div class="miling-form__container">
+                    <input type="email" name="user-email" placeholder="E-mail" class="mailing__input" required>
+        
+                    <button type="submit" class="mailing__button">Подписаться &nbsp
                         <svg width=24 height=24>
                             <use href="./image/sprit/sprit.svg#icon-send"></use>
                         </svg>
                     </button>
-                </form>
-            
-            </div>
-        </div>          
+                </div>
+        
+            </form>
+        
+        </div>
     </footer>
     
     <div class="backdrop is-hidden" data-modal>
