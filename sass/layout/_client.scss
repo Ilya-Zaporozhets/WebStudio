@@ -23,9 +23,10 @@
 }
 .client__card {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 190px;
+  width: 210px;
   height: 90px;
 
   padding: auto;

@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 
@@ -580,6 +580,7 @@ img {
 
 .client__card {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   width: 190px;
@@ -711,9 +712,8 @@ img {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
-  padding: 40px;
+  width: 100%;
+  max-width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -737,6 +737,22 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+  .modal-form {
+    padding: 40px;
+  }
 }
 
 .is-hidden {
