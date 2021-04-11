@@ -235,6 +235,12 @@ img {
   transition: opacity var(--transition-property);
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    padding: 0 auto;
+  }
+}
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -308,12 +314,23 @@ img {
 }
 
 .mobile-social__link {
-  margin-right: 20px;
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-social__link {
+    font-size: 14px;
+  }
+}
+
+.mobile-social__item + .mobile-social__item {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 @media screen and (max-width: 767px) {

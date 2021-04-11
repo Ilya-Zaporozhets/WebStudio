@@ -1,49 +1,86 @@
 .client {
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-
   &-container {
     margin-top: 30px;
   }
+  // &__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   text-align: center;
+  //   justify-content: center;
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    // text-align: center;
-    // justify-content: center;
-
-    margin-left: -30px;
-    margin-top: -30px;
-  }
+  //   margin-left: -30px;
+  //   margin-top: -30px;
+  // }
   &__item {
+    height: 90px;
+    // margin-top: 30px;
+    // margin-left: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+
+    background-color: transparent;
+
+    border: 1px solid var(--icon-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: border var(--transition-property);
+  }
+
+  // .client__card {
+  //   // display: flex;
+  //   // box-sizing: border-box;
+  //   // align-items: center;
+  //   // justify-content: center;
+  //   width: 210px;
+  //   height: 90px;
+
+  // padding: auto;
+
+  // background-color: transparent;
+
+  // border: 1px solid var(--icon-color);
+  // box-sizing: border-box;
+  // border-radius: 4px;
+
+  // transition: border var(--transition-property);
+
+  //   &:hover,
+  //   &:focus {
+  //     border: 1px solid var(--accent-color);
+  //   }
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: 210px;
+    flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
   }
-}
-.client__card {
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  width: 210px;
-  height: 90px;
-
-  padding: auto;
-
-  background-color: transparent;
-
-  border: 1px solid var(--icon-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  transition: border var(--transition-property);
-
-  &:hover,
-  &:focus {
-    border: 1px solid var(--accent-color);
+  .client__list {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-right: -30px;
+    // margin-bottom: -30px;
+    text-align: center;
+    justify-content: center;
+    margin-left: -15px;
   }
 }
+
 .client__icon {
   fill: var(--icon-color);
   transition: fill var(--transition-property);
