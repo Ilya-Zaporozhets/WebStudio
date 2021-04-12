@@ -24,7 +24,7 @@
     color: var(--primary-text-color);
   }
   &__card {
-    height: 110px;
+    height: 100%;
     padding: 20px 24px;
 
     border: 1px solid var(--border-color);
@@ -37,17 +37,18 @@
 }
 .portfolio__img-wrapper {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 .portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  padding: 63px 24px;
+  padding: 49px 24px;
 
   transform: translateY(100%);
-  overflow: hidden;
+
+  overflow: scroll;
 
   font-size: 18px;
   line-height: 1.55;
@@ -81,7 +82,7 @@
     height: 146px;
   }
 }
-@media screen and(min-width:768px) {
+@media screen and(min-width:1200px) {
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
