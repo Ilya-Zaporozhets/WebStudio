@@ -444,7 +444,7 @@
 
     <!--Подвал-->
     
-    <footer class="footer ">
+    <footer class="footer">
     
         <div class="container">
     
@@ -478,7 +478,7 @@
                 </address>
             </div>
     
-            <div class="footer__social-link container">
+            <div class="footer__social-link ">
     
                 <p class="footer__social-link_action">присоединяйтесь</p>
     
@@ -526,12 +526,14 @@
                 </ul>
             </div>
     
-            <!-- Form -->
+        </div>
+        <!-- Form -->
     
-            <div class="mailing">
+        <div class="mailing container">
+    
+            <form class="mailing__form" autocomplete="off">
                 <b class="mailing__action">Подпишитесь на рассылку</b>
-    
-                <form class="mailing__form" autocomplete="off">
+                <div class="miling-form__container">
                     <input type="email" name="user-email" placeholder="E-mail" class="mailing__input" required>
     
                     <button type="submit" class="mailing__button">Подписаться &nbsp
@@ -539,9 +541,10 @@
                             <use href="./image/sprit/sprit.svg#icon-send"></use>
                         </svg>
                     </button>
-                </form>
+                </div>
     
-            </div>
+            </form>
+    
         </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>

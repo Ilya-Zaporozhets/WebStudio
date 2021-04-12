@@ -1,8 +1,11 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   padding-bottom: 40px;
+  @media screen and(max-width:768px) {
+    justify-content: flex-start;
+  }
 }
 
 .filter__item {
