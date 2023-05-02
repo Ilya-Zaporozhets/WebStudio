@@ -499,7 +499,7 @@ img {
 
 .portfolio__img-wrapper {
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .portfolio__overlay {
@@ -509,7 +509,7 @@ img {
   height: 100%;
   padding: 49px 24px;
   transform: translateY(100%);
-  overflow: scroll;
+  overflow: hidden;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
