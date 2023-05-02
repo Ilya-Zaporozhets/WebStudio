@@ -37,7 +37,7 @@
 }
 .portfolio__img-wrapper {
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 .portfolio__overlay {
   position: absolute;
@@ -48,7 +48,7 @@
 
   transform: translateY(100%);
 
-  overflow: scroll;
+  overflow: hidden;
 
   font-size: 18px;
   line-height: 1.55;
